@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width = device-width, initial-scale = 0, user-scalable = no, minimum-scale = 1, maximum-scale = 1">
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="mainScreen">
+            <div class="header">
+                <div class="windowTitle">Image Scraper</div>
+                <div class="optionPane">
+                    <div class="search searchTab">SEARCH</div>
+                    <div class="search viewTab">VIEW</div>
+                </div>
+            </div>
+            <div class="contentContainer">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script id="searchTemplate" type="text/x-jsrender">
+    <div class="tab1">
+        <input class="searchKeyword" type="text" placeholder=" Enter Name">
+        <div class="submitButton">SUBMIT</div>
+        <div class="alertMessage">alert message</div>
+    </div>
+</script>
+
+
+<script id="viewTemplate" type="text/x-jsrender">
+    <div class="tab2">
+        <div class="leftPane">
+            {{for data}}
+            <div class="keywordsList" data-id={{:#index}}>
+                <div class="keywordText">{{:keyword}}</div>
+            </div>
+            {{/for}}
+        </div>
+
+        <div class="rightPane">
+
+        </div>
+    </div>
+</script>
+
+<script id="imageTemplate" type="text/x-jsrender">
+    <div class="keywordTitle"></div>
+    <div class="imageViewPane">
+        {{for data}}
+        <div class="imagesList">
+            <img class="imageIcon" src="{{:sortPath}}">
+        </div>
+        {{/for}}
+    </div>
+</script>
+
+<script src='../scripts/jquery.js'></script>
+<script src='../scripts/jsrender.js'></script>
+<script src='../scripts/jsviews.js'></script>
+<script src='../js/base.js'></script>
+<script src='../js/index.js'></script>
+
+<script src='../js/data.js'></script>
+
+</html>

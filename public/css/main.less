@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+.mainContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    //background-color: burlywood;
+    font-family: roboto;
+    text-transform: uppercase;
+    font-weight: 200;
+    .mainScreen {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        //background-color: burlywood;
+        .header {
+            position: absolute;
+            width: 100%;
+            height: 6rem;
+            top: 0;
+            border-bottom: 1px solid #2996cc;
+            .windowTitle {
+                position: absolute;
+                height: 6rem;
+                font-size: 3rem;
+                line-height: 6rem;
+                top: 0rem;
+                left: 2rem;
+                width: 60%;
+                text-align: left;
+            }
+            .optionPane {
+                position: absolute;
+                height: 6rem;
+                right: 0;
+                width: 40%;
+                font-size: 1rem;
+                line-height: 6rem;
+                .searchTab {
+                    position: relative;
+                    width: 50%;
+                    height: 4rem;
+                    top: 2rem;
+                    bottom: 0;
+                    font-size: 1.8rem;
+                    line-height: 4rem;
+                    text-align: center;
+                    float: left;
+                    line-height: 4rem;
+                }
+                .viewTab {
+                    position: relative;
+                    width: 50%;
+                    height: 4rem;
+                    font-size: 1.8rem;
+                    line-height: 4rem;
+                    text-align: center;
+                    top: 2rem;
+                    bottom: 0;
+                    float: right;
+                    line-height: 4rem;
+                }
+            }
+            .selected {
+                box-sizing: border-box;
+                border-bottom: 2.5px solid #2996cc;
+            }
+        }
+        .contentContainer {
+            position: absolute;
+            width: 100%;
+            top: 6rem;
+            bottom: 0;
+            .tab1 {
+                .searchKeyword {
+                    position: absolute;
+                    top: 2rem;
+                    left: 2rem;
+                    height: 4rem;
+                    width: 30rem;
+                    color: black;
+                    font-size: 1.8rem;
+                    box-sizing: border-box;
+                    padding-left: 1rem;
+                }
+                .submitButton {
+                    position: absolute;
+                    top: 8rem;
+                    left: 2rem;
+                    width: auto;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    height: 5rem;
+                    font-size: 2rem;
+                    line-height: 5rem;
+                    text-align: center;
+                    border: 1px solid #2996cc;
+                    background-color: #2996cc;
+                    color: white;
+                }
+                .alertMessage {
+                    position: absolute;
+                    bottom: 0;
+                    height: 3rem;
+                    width: 12rem;
+                    background-color: white
+                }
+            }
+            .tab2 {
+                position: absolute;
+                width: 100%;
+                top: 2rem;
+                bottom: 0;
+                .leftPane {
+                    position: relative;
+                    width: 25%;
+                    height: 100%;
+                    float: left;
+                    overflow: auto;
+                    .keywordsList {
+                        position: relative;
+                        width: 100%;
+                        height: 5rem;
+                        float: left;
+                        line-height: 5rem;
+                        font-size: 2.2rem;
+                        box-sizing: border-box;
+                        padding-left: 1rem;
+                        //border: 1px solid;
+                        &.selected {
+                            background: #2996cc;
+                            color: white;
+                        }
+                    }
+                    .keywordText {}
+                }
+                .selected {}
+                .rightPane {
+                    position: relative;
+                    width: 70%;
+                    margin-left: 5%;
+                    height: 100%;
+                    float: right;
+                    overflow: auto;
+                    .imageViewPane {
+                        .imagesList {
+                            position: relative;
+                            width: 20rem;
+                            height: 20rem;
+                            float: left;
+                            margin-left: 2rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                            .imageIcon {
+                                width: 20rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
