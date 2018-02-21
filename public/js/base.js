@@ -1,5 +1,5 @@
 ﻿﻿var eventToUse = 'click';
-var appUrl = 'http://127.0.0.1:3000';
+var appUrl = 'https://gentle-temple-51538.herokuapp.com';
 
 function makeTemplates() {
     var templateName = '';
