@@ -1,0 +1,24 @@
+{
+  "name": "image-scraping",
+  "version": "0.0.1",
+  "description": "my first google image scraper app",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.2",
+    "image-compressor": "^1.1.9",
+    "image-downloader": "^3.2.2",
+    "images-scraper": "^2.0.11",
+    "jimp": "^0.2.28",
+    "mongodb": "^2.2.30",
+    "request": "^2.81.0",
+    "socket.io": "^2.0.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
